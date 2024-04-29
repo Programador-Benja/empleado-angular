@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './list-empleados.component.css'
 })
 export class ListEmpleadosComponent {
+nombre: any;
 
 }

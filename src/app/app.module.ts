@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CreateEmpleadoComponent } from './components/create-empleado/create-empleado.component';
 import { ListEmpleadosComponent } from './components/list-empleados/list-empleados.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

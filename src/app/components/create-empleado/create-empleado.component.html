@@ -4,18 +4,42 @@
             <div class="card text-center">
                 <div class="card-body">
                     <h3 class="mb-3">Agregar Empleados</h3>
-                    <form action="">
+                    <!-- Formulario -->
+                    <form>
+                        <!-- Nombre -->
                         <div class="row mb-3">
                             <div class="col">
-                                <input type="text" name="nombre" class="form-control" placeholder="Nombre" id="">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                    <label for="nombre">Nombre</label>
+                                </div>
                             </div>
                         </div>
+                        <!-- Apellido -->
                         <div class="row mb-3">
                             <div class="col">
-                                <input type="text" name="apellido" class="form-control" placeholder="Apellido" id="">
+                                <div class="form-floating"> 
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                    <label for="apellido">Apellido</label>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                        <!-- Profesion -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-floating"> 
+                                    <input type="text" class="form-control" id="profesion" placeholder="Profesion">
+                                    <label for="profesion">Profesion</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-dark btn-lg" routerLink="/list-empleados"><i class="fa-solid fa-user-plus"></i> Agregar</button>                     
+                            </div>
+                        </div>
+                    </form> <!--Final Formulario-->
                 </div>
             </div>
         </div>
